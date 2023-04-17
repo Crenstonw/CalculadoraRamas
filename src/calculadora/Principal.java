@@ -18,7 +18,7 @@ public class Principal {
 					+ 			"(3) multiplicar *\n"
 					+ 			"(4) dividir /\n"
 					+ 			"(5) resto % \n"
-					+ 			"(6) salir");
+					+ 			"(0) salir");
 		String respuesta= leer.nextLine();
 		aux= Integer.parseInt(respuesta);
 		switch(aux) {
@@ -30,7 +30,7 @@ public class Principal {
 			respuesta=leer.nextLine();
 			num2= Double.parseDouble(respuesta);
 			total=num1+num2;
-			System.out.println("La suma entre " + num1 + " " + num2 + " es: " + total);
+			System.out.printf("La suma entre %.2f y %.2f es: %.2f\n", num1, num2, total);
 			break;
 		case 2:
 			break;
