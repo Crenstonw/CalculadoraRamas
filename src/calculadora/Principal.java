@@ -8,6 +8,7 @@ public class Principal {
 		// TODO Auto-generated method stub
 		Scanner leer=new Scanner(System.in);
 		int aux;
+		double num1, num2, total;
 		
 		System.out.println("Bienvenido a la calculadora chusquera");
 		do {
@@ -20,9 +21,16 @@ public class Principal {
 					+ 			"(6) salir");
 		String respuesta= leer.nextLine();
 		aux= Integer.parseInt(respuesta);
-		
 		switch(aux) {
 		case 1:
+			System.out.println("Indique el primer número:");
+			respuesta=leer.nextLine();
+			num1= Double.parseDouble(respuesta);
+			System.out.println("Indique el segundo número:");
+			respuesta=leer.nextLine();
+			num2= Double.parseDouble(respuesta);
+			total=num1+num2;
+			System.out.println("La suma entre " + num1 + " " + num2 + " es: " + total);
 			break;
 		case 2:
 			break;
